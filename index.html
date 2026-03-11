@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>9Ras Yoga | Live life joyfully</title>
+
+    <meta
+      name="description"
+      content="9Ras Yoga – mindful yoga practice for balance, strength and calmness."
+    />
+
+    <link rel="stylesheet" href="main.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">9Ras Yoga</div>
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#journey">Journey</a>
+        <a href="#contact">Contact</a>
+        <button id="themeToggle">🌙</button>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <img src="images/banner.jpg" loading="lazy" />
+
+      <div class="hero-text">
+        <h1>Flow With Breath</h1>
+        <p>Find calmness in meditation</p>
+      </div>
+    </section>
+
+    <!-- CAROUSEL -->
+
+    <section class="carousel-section">
+      <div class="carousel" id="carousel">
+        <div class="slide" data-video="">
+          <img src="images/yoga1.jpg" loading="lazy" />
+          <p>Morning Flow</p>
+        </div>
+
+        <div class="slide" data-video="videos/yoga-session.mp4">
+          <img src="images/yoga2.jpg" loading="lazy" />
+          <p>What is Yoga?</p>
+        </div>
+        <!-- <div class="slide" data-video="https://www.youtube.com/embed/v7AYKMP6rOE">
+<img src="images/yoga2.jpg" loading="lazy">
+<p>Watch Yoga Practice</p>
+</div> -->
+
+        <div class="slide" data-video="">
+          <img src="images/yoga3.jpg" loading="lazy" />
+          <p>Balance Training</p>
+        </div>
+
+        <div class="slide" data-video="">
+          <img src="images/yoga4.jpg" loading="lazy" />
+          <p>Relaxation</p>
+        </div>
+
+        <div class="slide" data-video="">
+          <img src="images/yoga5.jpg" loading="lazy" />
+          <p>Deep Stretch</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEO MODAL -->
+
+    <div id="videoModal">
+      <div class="video-box">
+        <span id="closeVideo">✕</span>
+
+        <video id="videoPlayer" controls autoplay></video>
+
+        <!--
+<iframe id="videoFrame"
+allow="autoplay"
+allowfullscreen>
+</iframe> -->
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+
+    <section id="about" class="about">
+      <h2>About 9Ras Yoga</h2>
+
+      <p>
+        9Ras Yoga blends traditional yoga with modern wellness practices to help
+        you reconnect with breath, balance and movement.
+      </p>
+    </section>
+
+    <!-- 9 Ras Yoga Journey -->
+    <section class="journey" id="journey">
+      <h2>Your Yoga Journey</h2>
+
+      <div class="steps">
+        <div class="step">
+          <img src="images/steps/step1.jpg" alt="" />
+          <h3>1. Arrive</h3>
+          <p>
+            Begin by arriving fully in the present moment. Slow your breath and
+            settle your mind.
+          </p>
+        </div>
+
+        <div class="step">
+          <img src="images/steps/step2.jpg" alt="" />
+          <h3>2. Breathe</h3>
+          <p>
+            Connect movement with breath. Let each inhale and exhale guide your
+            flow.
+          </p>
+        </div>
+
+        <div class="step">
+          <img src="images/steps/step3.jpg" alt="" />
+          <h3>3. Warm Up</h3>
+          <p>
+            Gentle stretches awaken the body and prepare your muscles for deeper
+            movement.
+          </p>
+        </div>
+
+        <div class="step">
+          <img src="images/steps/step4.jpg" alt="" />
+          <h3>4. Flow</h3>
+          <p>
+            Move through sequences that build strength, balance, and
+            flexibility.
+          </p>
+        </div>
+
+        <div class="step">
+          <img src="images/steps/step5.jpg" alt="" />
+          <h3>5. Balance</h3>
+          <p>
+            Explore poses that challenge your stability and deepen your focus.
+          </p>
+        </div>
+
+        <div class="step">
+          <img src="images/steps/step6.jpg" alt="" />
+          <h3>6. Strength</h3>
+          <p>
+            Activate your core and develop strength through mindful posture.
+          </p>
+        </div>
+
+        <div class="step">
+          <img src="images/steps/step7.jpg" alt="" />
+          <h3>7. Deep Stretch</h3>
+          <p>
+            Slow down and open the body with longer holds and deeper stretches.
+          </p>
+        </div>
+
+        <div class="step">
+          <img src="images/steps/step8.jpg" alt="" />
+          <h3>8. Release</h3>
+          <p>
+            Allow tension to melt away and let your breath return to a calm
+            rhythm.
+          </p>
+        </div>
+
+        <div class="step">
+          <img src="images/steps/step9.jpg" alt="" />
+          <h3>9. Stillness</h3>
+          <p>
+            End in relaxation and meditation. Let the practice integrate fully.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+
+      <form action="https://formspree.io/f/yourformid" method="POST">
+        <input type="text" name="name" placeholder="Name" required />
+
+        <input type="email" name="email" placeholder="Email" required />
+
+        <textarea name="message" placeholder="Message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2026 9Ras Yoga</p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
